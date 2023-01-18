@@ -1,0 +1,170 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DRUM-KIT</title>
+    <style>
+        header
+        {
+            height: 100vh;
+        }
+        body
+        {
+            margin: 0;
+        }
+        #main
+        {
+            background-image:url('./drums.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 100vh;
+           
+        }
+        #heading
+        {
+          padding-top:8%;
+          color: white;
+          text-align: center;
+          font-size: 28px;
+        
+        }
+        #icon-list
+        {
+            display: flex;
+            justify-content: center;
+        }
+        .icon
+        {
+            
+            width:100px;
+            margin-left: 3px;
+            border: 3px solid black;
+            box-shadow: 0px 5px 20px gray; 
+        }
+        .icon>h1
+        {
+            text-align: center;
+            color: white;
+        }
+        .icon>p
+        {
+            text-align: center;
+            color: yellow;
+        }
+        @media (max-width: 600px)
+        {
+            #main
+        {
+            background-image:url('./drums.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 100vh;
+           
+        }
+            #heading
+        {
+          padding-top:8%;
+          color: white;
+          text-align: center;
+          font-size: 16px;
+        
+        }
+            #icon-list
+        {
+            display: flex;
+            flex-wrap:wrap;
+            justify-content: center;       
+        }
+        .icon{
+            margin-right: 10px;
+            margin-bottom: 10px;
+        }
+                       
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div id="main">
+            <div id="heading">
+                <h1>Press The Following Keys For Drums Sounds</h1>
+            </div>
+                <div id="icon-list">
+                    <div class="icon">
+                        <h1>A</h1> 
+                        <p>BOOM</p>
+                        <audio id="boom" controls style="display: none;">
+                            <source src="./boom.wav" type="audio/wav">
+                        </audio>
+                    </div>
+
+                    <div class="icon">
+                        <h1>S</h1> 
+                        <p>CLAP</p>
+                        <audio id="clap"   controls style="display: none;">
+                            <source src="./clap.wav" type="audio/wav">
+                        </audio>
+                    </div>
+
+                    <div  class="icon" >
+                        <h1>D</h1> 
+                        <p>HITHAT</p>
+                        <audio id="hithat" controls style="display: none;">
+                            <source src="./hihat.wav" type="audio/wav">
+                        </audio>
+                    </div>
+
+                    <div  class="icon" >
+                        <h1>F</h1> 
+                        <p>KICK</p>
+                        <audio id="kick" controls style="display: none;">
+                            <source src="./kick.wav" type="audio/wav">
+                        </audio>
+                    </div>
+
+                    <div  class="icon" >
+                        <h1>G</h1> 
+                        <p>OPENHAT</p>
+                        <audio id="openhat" controls style="display: none;">
+                            <source src="./openhat.wav" type="audio/wav">
+                        </audio>
+                    </div>
+
+                    <div  class="icon" >
+                        <h1>H</h1> 
+                        <p>RIDE</p>
+                        <audio id="ride" controls style="display: none;">
+                            <source  src="./ride.wav" type="audio/wav">
+                        </audio>
+                    </div>
+
+                    <div  class="icon" >
+                        <h1>J</h1> 
+                        <p>SNARE</p>
+                        <audio id="snare" controls style="display: none;">
+                            <source src="./snare.wav" type="audio/wav">
+                        </audio>
+                    </div>
+
+                    <div  class="icon" >
+                        <h1>K</h1> 
+                        <p>TINK</p>
+                        <audio id="tink" controls style="display: none;">
+                            <source src="./tink.wav" type="audio/wav">
+                        </audio>
+                    </div>
+
+                    <div  class="icon" >
+                        <h1>L</h1> 
+                        <p>TOM</p>
+                        <audio id="tom" controls style="display: none;">
+                            <source src="./tom.wav" type="audio/wav">
+                        </audio>
+                    </div>
+            </div>
+        </div>
+    </header>
+    <script src="index.js"></script>
+</body>
+</html>
